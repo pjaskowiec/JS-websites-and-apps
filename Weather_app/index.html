@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <!--jakies fonty googlowskie-->  
+        <!--kompatybilnosc z safari i macami ogolnie-->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="keywords" content="pogoda weather rainy">
+        <meta name="description" content="weather-app">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="./Style/index.css">
+        <link rel="stylesheet" href="./Style/index_loading.css">
+        <link rel="stylesheet" href="./Style/index_ready.css">
+        <link rel="stylesheet" href="./Style/index_media.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <title>Check the weather</title>
+    </head>
+    <body>
+       
+    <div id="loading_screen">
+       <div id="onload">
+         <img src="Photos/Vector.png" alt="loading image">
+       </div>
+       <div id="bar">
+          <div id="moving_object">
+          </div>
+       </div>
+    </div>
+       
+    <div id="main">
+      <div id="photography">  
+      <img src="./Photos/Vector.png" alt="image"   >
+      </div>
+    <div id="holder">
+        <div id="input_holder">
+      <input type="text" id="typing" list="datalist" placeholder="wybierz miasto" >
+    <img src="Photos/go.png" alt="icon" class="to_go" onclick="load_data()" >
+      </div>
+      <ul class="card card-body mb-2 complete" id="completion" hidden=true>
+      </ul>  
+    </div>
+    </div>
+
+<div id="main_weather" class="container-fluid" hidden="true"> 
+  <div class="row fixed-bottom" id="temp_all">
+<div id="holder1" class="col-xl-4 col-md-4 col-4">
+  <img src="Photos/Vector.png" alt="image">
+<p>Temperatura maksymalna<br></p>
+</div>
+<div id="holder2" class="col-xl-4 col-md-4 col-4">
+  <img src="Photos/Vector.png" alt="image">
+  <p>Temperatura minimalna<br></p>
+
+</div>
+<div id="holder3" class="col-xl-4 col-md-4 col-4">
+  <img src="Photos/Vector.png" alt="image">
+  <p>Temperatura oczekiwana<br></p>
+</div>
+
+</div>
+ </div>
+
+
+
+
+
+    </body>
+
+    <script type="text/javascript" src="Scripts/index.js"></script>
+
+    </html>
