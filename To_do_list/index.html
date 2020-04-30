@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>To-do List</title>
+        <meta name="description" content="to-do app">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="to-do list todoapp">
+        <link rel="stylesheet" href="./styles/index.css" type="text/css">
+        <link rel="stylesheet" href="./styles/index_media.css" type="text/css">
+        <link rel="stylesheet" href="css/fontello.css" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet">
+
+    </head>
+
+<body>
+        
+    <div id="do_body">
+      <form id="do_form">
+
+            <div class="add_text">
+            <label for="do_intext" style="font-weight: bold; font-size: 30px;">Wpisz tekst</label>   
+            <textarea name="do_intext" id="do_intext" placeholder="Message" ></textarea>
+            </div>
+
+           <div class="click_button">
+           <button type="submit" id="button_do">Dodaj</button>
+           </div>
+
+           <section class="todo-list-cnt">
+             <header class="todo-list-header">
+                <h2 class="todo-list-title" >Szukaj:</h2>
+                <form class="todo-list-search-form">
+                   <input type="search" id="todoSearch" class="todo-list-search">
+                </form>
+             </header>
+
+             <div class="todo-list" id="todoList">
+             <!-- Miejsce na elementy listy -->
+             </div>
+             <div id="remover">
+              <button type="submit" id="clearAll">Wyczyść</button>
+            </div>
+             
+</section>
+      </form>
+    
+    </div>
+
+</body>
+
+<script type="text/javascript" src="./scripts/index.js"></script>
+</html>

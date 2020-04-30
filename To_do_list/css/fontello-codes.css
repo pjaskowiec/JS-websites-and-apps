@@ -1,0 +1,6 @@
+
+.icon-laptop:before { content: '\33'; } /* '3' */
+.icon-cancel:before { content: '\e800'; } /* '' */
+.icon-facebook-squared:before { content: '\f308'; } /* '' */
+.icon-linkedin-squared:before { content: '\f30c'; } /* '' */
+.icon-instagram-1:before { content: '\f32d'; } /* '' */
